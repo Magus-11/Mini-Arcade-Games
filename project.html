@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Games</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* border: 2px solid rgb(0, 255, 0); */
+        width: 97.2vw;
+        height: 96.5vh;
+    }
+    .container::before{
+        background-image: url('img/hybride.jpg');
+        content: "";
+        position:absolute;
+        width: 1145px;
+        height: 581px;
+        z-index: -1;
+        top:22px;
+        left:97px;
+        opacity: 0.5;
+    } 
+    .element
+    {
+        display: flex;
+        position: relative;
+        width: 1105px;
+        height: 571px;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(0, 255, 0); */
+        border-radius: 367px;
+        flex-wrap: wrap;
+    }
+    div img{
+    width: 135px;
+    height: 111px;
+    border-radius: 30px;
+    border-color: rgb(0, 255, 0);
+    position: relative;
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(0, 255, 0);
+    /* box-shadow: 1px 2px 100px rgb(30, 255, 0); */
+    margin: 9px 0px;
+    transition: all 80ms linear;
+}
+ #A {
+position: relative;
+bottom: 208px;
+right:-160px;
+animation-name: move6;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animatison-play-state: paused; */
+animation-direction:reverse;
+}
+#B {
+position: relative;
+right: 180px;
+bottom: 23px;
+animation-name: move1;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animatison-play-state: paused; */
+animation-direction:reverse;
+}
+#C {
+position: relative;
+bottom: -180px;
+right: 105px;
+animation-name: move2;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite; 
+/* animations-play-state: paused; */
+animation-direction:reverse;
+}
+#D {
+position: relative;
+bottom: 208px;
+right: -120px;
+animation-name: move5;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animastion-play-state: paused; */
+animation-direction:reverse;
+}
+#E {
+position: relative;
+right: -190px;
+bottom: 23px;
+animation-name: move4;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* sanimation-play-state: paused; */
+animation-direction:reverse;
+}
+#F {
+position: relative;
+bottom: -180px;
+right: 150px;animation-name: move3;
+animation-duration: 7000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-play-state: paused; */
+animation-direction:reverse;
+}
+div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    /* border: 2px solid red; */
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+.ii{
+    filter: invert(1);
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(0, 255, 0);
+    /* box-shadow: 1px 2px 100px rgb(301000m 255, 0); */
+}
+h2
+{
+    position: absolute;
+    color: aqua;
+    top: 168px;
+    left: 360px;
+    z-index: -1;
+    animation-name: font1;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes font1 {
+    0%{
+      font-size: 67px;
+      left:360px;
+      top: 168px;
+      text-shadow: 0 0 10px rgb(0, 255, 0);
+    }
+    50%{
+        font-size: 77px;
+        left:340px;
+        text-shadow: 0 0 30px rgb(0, 255, 0);
+        top: 158px;
+    }
+    100%{
+        font-size: 67px;
+        left:360px;
+        top: 168px;
+        text-shadow: 0 0 10px rgb(0, 255, 0);
+    }
+}
+@keyframes move1 {
+    0%{
+        right: 180px;
+        bottom: 23px;
+    }
+    8%{
+        right: 135px;
+    bottom: -134px;
+    }
+    17%{
+        right: -27px;
+        bottom: -180px;
+    }
+    33%{
+        right: -398px;
+        bottom: -180px;
+    }
+    41%{
+        right: -556px;
+        bottom: -123px;
+    }
+    50%{
+        right: -601px;
+        bottom: 23px;
+    }
+    58%{
+        right: -541px;
+        bottom: 148px;
+    }
+    67%{
+        right: -394px;
+        bottom: 209px;
+    }
+    84%{
+        right: -22px;
+        bottom: 209px;
+    }
+    92%{
+        right: 130px;
+        bottom: 148px;
+    }
+    100%{
+        right: 180px;
+        bottom: 23px;
+    }
+}
+@keyframes move2 {
+    0%{
+        bottom: -180px;
+        right:105px;
+    }
+    17%{
+        bottom: -180px;
+        right:-267px;
+    }
+    25%{
+        bottom: -124px;
+        right: -423px;
+    }
+    33%{
+        bottom: 24px;
+        right:-469px;
+    }
+    41%{
+        bottom: 148px;
+    right: -409px;
+    }
+    50%{
+        bottom: 208px;
+    right: -263px;
+    }
+    67%{
+        bottom: 208px;
+    right: 110px;
+    }
+    75%{
+        bottom: 148px;
+    right: 262px;
+    }
+    84%{
+        bottom: 23px;
+    right: 312px;
+    }
+    92%{
+        bottom: -134px;
+    right: 267px;
+    }
+    100%{
+        bottom: -180px;
+        right:105px;
+    }
+}
+@keyframes move3 {
+    0%{
+        bottom: -180px;
+        right: 150px;
+    }
+    8%{
+        bottom: -125px;
+    right: -7px;
+    }
+    17%{
+        bottom: 23px;
+    right: -52px;
+    }
+    25%{
+        bottom: 148px;
+    right: 7px;
+    }
+    33%{
+        bottom: 208px;
+    right: 154px;
+    }
+    50%{
+        bottom: 208px;
+    right: 526px;
+    }
+    58%{
+        bottom: 148px;
+    right: 678px;
+    }
+    67%{
+        bottom: 23px;
+    right: 729px;
+    }
+    75%{
+        bottom: -134px;
+    right: 683px;
+    }
+    84%{
+        bottom: -180px;
+        right: 522px;
+    }
+    100%{
+        bottom: -180px;
+        right: 150px;
+    }
+}
+@keyframes move4 {
+    0%{
+        right: -190px;
+    bottom: 23px;
+    }
+    8%{
+        right: -131px;
+    bottom: 147px;
+    }
+    17%{
+        right: 16px;
+    bottom: 208px;
+    }
+    33%{
+        right: 390px;
+    bottom: 208px;
+    }
+    41%{
+        right: 541px;
+    bottom: 148px;
+    }
+    50%{
+        right: 591px;
+    bottom: 23px;
+    }
+    58%{
+        right: 545px;
+    bottom: -134px;
+    }
+    67%{
+        right: 384px;
+    bottom: -180px;
+    }
+    84%{
+        right: 12px;
+    bottom: -180px;
+    }
+    92%{
+        right: -145px;
+    bottom: -125px;
+    }
+    100%{
+        right: -190px;
+    bottom: 23px;
+    }
+}
+@keyframes move5 {
+    0%{
+        bottom: 208px;
+    right: -120px;
+    }
+    17%{
+        bottom: 208px;
+    right: 253px;
+    }
+    25%{
+        bottom: 148px;
+    right: 404px;
+    }
+    33%{
+        bottom: 22px;
+    right: 455px;
+    }
+    41%{
+        bottom: -135px;
+    right: 409px;
+    }
+    50%{
+        bottom: -181px;
+    right: 248px;
+    }
+    67%{
+        bottom: -181px;
+    right: -124px;
+    }
+    75%
+    {
+        bottom: -125px;
+    right: -280px;
+    }
+    84%{
+        bottom: 23px;
+    right: -326px;
+    }
+    92%{
+        bottom: 148px;
+    right: -266px;
+    }
+    100%{
+        bottom: 208px;
+    right: -120px;
+    }
+}
+@keyframes move6 {
+    0%{
+        bottom: 208px;
+    right: -160px;
+    }
+    8%{
+        bottom: 149px;
+    right: -9px;
+    }
+    17%{
+        bottom: 24px;
+    right: 43px;
+    }
+    25%{
+        bottom: -134px;
+    right: -3px;
+    }
+    33%{
+        bottom: -180px;
+    right: -165px;
+    }
+    50%{
+        bottom: -180px;
+    right: -537px;
+    }
+    58%{
+        bottom: -124px;
+    right: -692px;
+    }
+    67%{
+        bottom: 23px;
+    right: -738px;
+    }
+    75%{
+        bottom: 147px;
+    right: -678px;
+    }
+    84%{
+        bottom: 208px;
+    right: -533px;
+    }
+    100%{
+        bottom: 208px;
+    right: -160px;
+    }
+}
+.font{
+     font-size: 67px;
+     font-family: arial; color: rgb(2, 0, 139);
+     -webkit-text-stroke: 2px rgb(0, 255, 0);
+     text-shadow: 0 0 10px rgb(0, 255, 0);
+}
+img:hover{
+    width: 167px;
+    height: 141px;
+}
+a:hover{
+    text-shadow: 0 0 10px rgb(255, 208, 0);
+    /* -webkit-text-stroke: 1px rgb(255, 208, 0); */
+    color: yellow;
+}
+.container{
+    border: 2.5px solid red;
+    border-radius: 23px;
+    width: 1145px;
+    height: 581px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="element">
+            <div><h2 class="font">Mini Games</h2></div>
+            <div ><a href="" id="A" class="collect"><img src="img/sdk.jpg" id="a" class="ii" alt="">Sudoku</a></div>
+            <div ><a href="pages/index4.html" id="B" class="collect"><img src="img/logo1.jpg" id="b" href="" alt="">Snake Classic</a></div>
+            <div ><a href="" id="C" class="collect"><img src="img/space.png" id="c" class="ii" href="" alt="">Alien Attack</a></div>
+            <div ><a href="" id="D" class="collect"><img src="img/hon.png" id="d" href="" alt="">Tower Of Hanoi</a></div>
+            <div ><a href="" id="E" class="collect"><img src="img/Ball.jpg" id="e" href="" class="ii" alt="">Bounce Tales</a></div>
+            <div ><a href="pages/race.html" id="F" class="collect"><img src="img/download.jpg"  id="f" href="" alt="">Furious Racing</a></div>
+            </div>
+        </div>
+    </header>
+    <script>
+        const hoversound=new Audio('music/move.mp3');
+        const music=new Audio('music/music.mp3');
+        const click=new Audio('music/click2.wav');
+        let tn=[];
+        let cn=[];
+        let x=0;
+        for(let i=0;i<6;i++)
+        {
+            tn[i]=document.getElementsByClassName('collect')[i];
+            cn[i]=document.getElementsByClassName('collect')[i];
+        }
+        // window.addEventListener('keydown',e=>{
+        //     sound.play();
+        //     switch (e.key) {
+        //         case "ArrowRight":
+                    
+        //            break;
+        //         case "ArrowLeft":
+                 
+        //             break;
+        //     }
+        // })
+        music.play();
+        for(let i=0;i<6;i++)
+        {
+        tn[i].addEventListener('mouseover',function(){
+            hoversound.play();
+            document.getElementById('A').style.animationPlayState="paused";
+            document.getElementById('B').style.animationPlayState="paused";
+            document.getElementById('C').style.animationPlayState="paused";
+            document.getElementById('D').style.animationPlayState="paused";
+            document.getElementById('E').style.animationPlayState="paused";
+            document.getElementById('F').style.animationPlayState="paused";
+        })
+        tn[i].addEventListener('mouseout',function(){
+            document.getElementById('A').style.animationPlayState="running";
+            document.getElementById('B').style.animationPlayState="running";
+            document.getElementById('C').style.animationPlayState="running";
+            document.getElementById('D').style.animationPlayState="running";
+            document.getElementById('E').style.animationPlayState="running";
+            document.getElementById('F').style.animationPlayState="running";
+        })
+        }
+
+    </script>
+</body>
+</html>

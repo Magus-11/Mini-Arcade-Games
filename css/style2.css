@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 199, 199);
+}
+.container{
+    margin-top: 3em;
+    width: 80vw;
+    height: 90vh;
+    border: 3px solid white;
+    background-color: black;
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.launcher{
+    width: 156px;
+    height: 29px;
+    background-color: red;
+    border-radius: 2px;
+    border: 2px solid white;
+    position: relative;
+    bottom: .5em;
+}
+.blocks{
+    position: absolute;
+    bottom: 394px;
+}
+.block4{
+    display: flex;
+    position: relative;
+    left: 84px;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+@keyframes slide{
+    0%{
+        left:-84px;
+    }
+    25%{
+        left:84px;
+    }
+    50%{
+        left:202px;
+    }
+    75%{
+        left:84px;
+    }
+    100%{
+        left:-84px;
+    }
+}
+@keyframes slide1{
+    0%{
+        left:85px;
+    }
+    25%{
+        left:0px;
+    }
+    50%{
+        left:-90px;
+    }
+    75%{
+        left:0px;
+    }
+    100%{
+        left:85px;
+    }
+}
+.block5{
+    display: flex;
+    position: relative;
+    animation-name: slide1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+p{
+    width: 7em;
+    height: 1.5em;
+    background-color: rgb(255, 166, 0);
+    margin: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+#ball{
+    width:23px;
+    height:23px;
+    background: linear-gradient(rgb(136, 250, 101),green);
+    border: 1px solid white;
+    position:relative;
+    bottom: 289px;
+    left: 45px;
+    border-radius: 80%;
+}
+/* .hide{
+    visibility: hidden;
+} */

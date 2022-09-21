@@ -1,0 +1,64 @@
+.sup{
+    position: absolute;
+    top: 77px;
+    left: 443px;
+    text-align: center;
+    padding: 0px 11px;
+    margin: -75px 0px;
+}
+.head{
+    color:  rgb(52, 255, 1);
+    font-family: 'Lora';
+    font-style: inherit;
+    font-size: 78px;
+    -webkit-text-stroke: 2.2px rgb(219, 11, 122);
+    width: fit-content;
+    text-shadow: 0px 0px 10px rgb(0, 2, 0);
+}
+.btn{
+    color: white;
+    background-color: rgb(3, 0, 192);
+    font-size: 14px;
+    width: 199px;
+    padding: 3px 18px;
+    margin: 3px 30px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.smak{
+    position: absolute;
+    width: 356px;
+    top: 85px;
+}
+#pic1{
+    left: 942px;
+}
+#pic2{
+    transform: scaleX(-1);
+    left: 34px;
+}
+.btn a:hover{
+    color: yellow;
+    font-size: 26px;
+}
+.container{
+    border: 8px solid blue;
+    display: inline-block;
+    width: 97vw;
+    height: 94vh;
+    border-radius: 25px;
+}
+#pic3{
+    position: absolute;
+    top: 376px;
+    left: 610px;
+    width: 175px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    border-bottom-left-radius: 199px;
+    border-bottom-right-radius: 199px;
+}
